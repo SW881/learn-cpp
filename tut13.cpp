@@ -19,10 +19,10 @@ int main()
 
     int mathMarks[4];
 
-    mathMarks[0] = 200;
-    mathMarks[1] = 595;
-    mathMarks[2] = 934;
-    mathMarks[3] = 459;
+    mathMarks[0] = 20;
+    mathMarks[1] = 15;
+    mathMarks[2] = 95;
+    mathMarks[3] = 69;
 
     cout << "Math Marks" << endl;
 
@@ -44,12 +44,23 @@ int main()
 
     int *p = mathMarks;
 
-    cout << "Math Marks using at 0 : " << *(p) << endl;
-    cout << "Math Marks using at 1 : " << *(p + 1) << endl;
-    cout << "Math Marks using at 2 : " << *(p + 2) << endl;
-    cout << "Math Marks using at 3 : " << *(p + 3) << endl;
+    cout << *(p++) << endl;
+    cout << *(p) << endl;
 
-    cout << "Math Marks using at 0 : " << &(p) << endl;
+    cout << *(++p) << endl;
+    cout << *(p) << endl;
+
+    cout << *(--p) << endl;
+    cout << *(p) << endl;
+
+    // cout << "Math Marks using at 0 : " << *(p) << endl;
+
+    // cout << "Math Marks using at 0 : " << *(p) << endl;
+    // cout << "Math Marks using at 1 : " << *(p + 1) << endl;
+    // cout << "Math Marks using at 2 : " << *(p + 2) << endl;
+    // cout << "Math Marks using at 3 : " << *(p + 3) << endl;
+
+    // cout << "Math Marks using at 0 : " << &(p) << endl;
     // cout << "Math Marks using at 1 : " << &(p + 1) << endl;
     // cout << "Math Marks using at 2 : " << &(p + 2) << endl;
     // cout << "Math Marks using at 3 : " << &(p + 3) << endl;
